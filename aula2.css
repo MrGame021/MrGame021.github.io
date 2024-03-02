@@ -9,5 +9,5 @@ img{
     border-radius: 5px;
 }
 img:hover{
-    border: 4px outset;
+    border: 4px outset orangered;
 }
