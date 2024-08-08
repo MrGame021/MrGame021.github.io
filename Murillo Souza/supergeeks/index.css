@@ -1,15 +1,16 @@
 body{
     margin: 0px;
     font-size: 24px;
-    background-color: #b1d9e9;
+    background-color: #ade4f8;
 }
 main{
-    background-color: darkcyan;
-    border: 5px solid #277477;
+    background-color: #71b0f0;
+    border: 5px solid #5899b9a2;
     border-radius: 10px;
     margin: 150px;
     margin-top: 50px;
     font-family: monospace;
+    color: #ebebeb;
     > h1{
         font-size: 60px;
         text-align: center;
@@ -22,7 +23,7 @@ main{
 }
 nav{
     height: 150px;
-    background-color:darkcyan;
+    background-color:#71b0f0;
     display: flex;
     justify-content: space-evenly;
     font-size: 30px;
@@ -30,7 +31,7 @@ nav{
     gap: 10px;
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    border-bottom: 8px solid #277477;
+    border-bottom: 8px solid #5899b97e;
 
     > input{
         padding: 8px;
@@ -46,13 +47,16 @@ nav{
     > div{
         display: flex;
         gap: 10px;
-        color: white;
+        color: #ebebeb;
         > a{
-            color: white;
-            background-color:#83bcbe;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #ebebeb;
+            background-color:#9edcf3ad;
             border-radius: 8px;
-            border: 5px solid #096164;
-            font-family: 'Courier New';
+            border: 5px solid #579ec2c7;
+            font-family: monospace;
             text-decoration: none;
             transition: 0.45s;
             padding: 8px;
