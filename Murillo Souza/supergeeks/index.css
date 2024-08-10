@@ -4,6 +4,7 @@ body{
     background-color: #ade4f8;
 }
 main{
+    display: flex;
     background-color: #71b0f0;
     border: 5px solid #5899b9a2;
     border-radius: 10px;
@@ -11,14 +12,22 @@ main{
     margin-top: 50px;
     font-family: monospace;
     color: #ebebeb;
+    align-items: center;
+    flex-direction: column;
     > h1{
         font-size: 60px;
         text-align: center;
         font-family: Calibri;
         margin-top: 25px;
+        
+        
     }
     > p{
-        margin-left: 50px;
+        display: flex;
+        margin-left: 80px;
+        margin-right: 80px;
+        text-align: justify;
+        align-self: normal; 
     }
 }
 nav{
@@ -32,7 +41,6 @@ nav{
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     border-bottom: 8px solid #5899b97e;
-
     > input{
         padding: 8px;
         border-radius: 16px;
@@ -60,10 +68,87 @@ nav{
             text-decoration: none;
             transition: 0.45s;
             padding: 8px;
-        }
+            width: 75px;
+            height: 75px;
+            justify-content: center;
+            }
         > a:hover{
             padding: 8px 16px;
-            text-decoration: underline;
+            > i{
+                text-decoration: none;
+            }
+            > label {
+                text-decoration: underline;
+            }
         }
     }
+}
+
+
+
+.dropdown{
+    transition: 0.475s;
+    color: white;
+    background-color:#9edcf3ad;
+    border-radius: 8px;
+    border: 5px solid #579ec2c7;
+    font-family: 'Courier New';
+    text-decoration: none;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    > div{
+        gap: 10px;
+        align-items: center;
+        margin-top: 160px;
+        border: 5px solid #579ec2c7;
+        background-color: #9edcf3ad;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        font-family: 'Courier New';
+        font-size: 25px;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+    }
+}
+.dropdown:hover > div{
+    display: flex;
+    > a{
+        padding: 0px 16px;
+        text-decoration: none;
+        color: #ebebeb;
+    }
+    > a:hover{
+        text-decoration: underline;
+    }
+
+}
+@media (max-width: 800px){
+    nav > div > a{
+        display: none;
+    }
+    .dropdown{
+        display: flex;
+    }
+}
+@media (max-width: 450px){
+    nav > input{
+        display: none;
+    }
+}
+@media (max-width: 1440px){
+    nav > div > a{
+        font-size: 40px;
+        height: 50px;
+        width: 50px;
+        > img{
+            height: 75px;
+        }
+        > label{
+            display: none;
+        }
+    }
+    
 }
