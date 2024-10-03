@@ -22,21 +22,32 @@ main{
         
         
     }
+    > #p1{
+        display: flex;
+        margin-left: 80px;
+        margin-right: 80px;
+        text-align: justify;
+        align-self: normal;
+        flex-direction: normal;
+        gap: 0px;
+        flex-wrap: nowrap;
+        > #um{
+            align-content: center;
+            text-align: justify;
+            margin: 20px;
+        }
+        > #dois{
+            height: 300px;
+        }
+    }
     > p{
-        background-color: red;
         display: flex;
         margin-left: 80px;
         margin-right: 80px;
         text-align: justify;
         align-self: normal; 
-        > label{
-            align-content: center;
-            text-align: justify;
-            margin: 20px;
-        }
-        > img{
-            height: 300px;
-        }
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
 nav{
