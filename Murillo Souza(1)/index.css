@@ -31,14 +31,26 @@ main{
         flex-direction: normal;
         gap: 0px;
         flex-wrap: nowrap;
-        > #um{
+
+
+            
+        #um{
+            display: flex;
             align-content: center;
             text-align: justify;
             margin: 20px;
         }
+        #tres{
+            display: flex;
+            align-content: center;
+            text-align: justify;
+            margin: 20px;
+        }
+
         > #dois{
             height: 300px;
         }
+
     }
     > p{
         display: flex;
@@ -168,7 +180,10 @@ nav{
                 display: none;
             }
         }
-        
+        > div > a:hover{
+            transition: 0.3125s;
+            padding: 10px 10px
+        }
     }
 }
 @media (max-width: 1040px){
@@ -218,6 +233,29 @@ nav{
             font-size: 15px;
             margin-left: 20px;
             margin-right: 20px;
+
+        }
+        label{
+            font-size: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        ol{
+            font-size: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        #p1{
+            #dois{
+            height: 170px;
+            }
+
+            #tres{
+                display: flex;
+                align-content: center;
+                text-align: justify;
+                margin: 20px;
+            }
         }
     }
     .dropdown{
